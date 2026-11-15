@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mathcalc"
+version = "0.1.0"
+description = "M.A.T.H. - Mathematical Analyzer and Token Handler: a domain-specific language for computational mathematics"
+requires-python = ">=3.10"
+
+[project.scripts]
+mathcalc = "mathcalc.cli:main"
+
+[tool.setuptools]
+packages = ["mathcalc"]
